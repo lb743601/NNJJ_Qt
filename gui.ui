@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="camera_setting_button">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>相机设置</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="connect_button">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>10</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>连接相机</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="capture_button">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>10</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>图像采集</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="recording_button">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>10</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开始录制</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="l1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>200</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>video1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="l4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>210</y>
+      <width>200</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>video4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="l6">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>210</y>
+      <width>200</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>video6</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="l2">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>50</y>
+      <width>200</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>video2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="l3">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>50</y>
+      <width>200</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>video3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="l5">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>210</y>
+      <width>200</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>video5</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>650</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
