@@ -40,9 +40,9 @@ class MainApp(QMainWindow, Ui_MainWindow):
         self.timer.timeout.connect(self.update_frame)
     def camera_setting(self):
         if not hasattr(self, 'camera_settings_window'):
-            self.camera_settings_window = Ui_Window(self)
+            self.camera_settings_window = Ui_Window()
+            self.camera_settings_window.setupUi(self.camera_settings_window)
 
-            # 显示子窗口
         self.camera_settings_window.show()
     #停止计时器，即停止视频显示
     def stop(self):

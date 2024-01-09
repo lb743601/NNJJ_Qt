@@ -7,44 +7,33 @@
 
 
 from PyQt6 import QtCore, QtGui, QtWidgets
+from PyQt6.QtWidgets import QWidget
 
+from PyQt6.QtWidgets import QWidget, QLabel, QLineEdit, QPushButton
 
-class Ui_Window(object):
-    def setupUi(self, MainWindow):
-        MainWindow.setObjectName("Ui_Window")
-        MainWindow.resize(350, 158)
-        self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
-        self.centralwidget.setObjectName("centralwidget")
-        self.label = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(60, 20, 72, 15))
-        self.label.setObjectName("label")
-        self.lineEdit = QtWidgets.QLineEdit(parent=self.centralwidget)
-        self.lineEdit.setGeometry(QtCore.QRect(140, 20, 113, 21))
-        self.lineEdit.setObjectName("lineEdit")
-        self.label_2 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(60, 50, 72, 15))
-        self.label_2.setObjectName("label_2")
-        self.lineEdit_2 = QtWidgets.QLineEdit(parent=self.centralwidget)
-        self.lineEdit_2.setGeometry(QtCore.QRect(140, 50, 113, 21))
-        self.lineEdit_2.setObjectName("lineEdit_2")
-        self.pushButton = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(130, 80, 93, 28))
-        self.pushButton.setObjectName("pushButton")
-        MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 350, 26))
-        self.menubar.setObjectName("menubar")
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
-        self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
+class Ui_Window(QWidget):
+    def setupUi(self, Window):
+        Window.setObjectName("Ui_Window")
+        Window.resize(350, 200)  # 设置窗口大小
 
-        self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        # 示例：添加一些控件，如标签、文本框、按钮等
+        self.label = QLabel("Label", Window)
+        self.label.setGeometry(50, 20, 200, 30)  # 设置标签位置和大小
 
-    def retranslateUi(self, MainWindow):
+        self.lineEdit = QLineEdit(Window)
+        self.lineEdit.setGeometry(50, 60, 200, 30)  # 设置文本框位置和大小
+
+        self.pushButton = QPushButton("Button", Window)
+        self.pushButton.setGeometry(50, 100, 200, 30)  # 设置按钮位置和大小
+
+        # 这里可以继续添加更多的控件和布局设置
+
+        # 设置窗口的标题和其他属性
+        self.retranslateUi(Window)
+
+    def retranslateUi(self, Window):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label.setText(_translate("MainWindow", "曝光时间"))
-        self.label_2.setText(_translate("MainWindow", "增益"))
-        self.pushButton.setText(_translate("MainWindow", "设置"))
+        Window.setWindowTitle(_translate("Ui_Window", "Camera Settings"))
+        # 可以在这里设置其他控件的文本，如按钮文本等
+
+# 如果需要的话，可以在这里添加测试代码或主函数
