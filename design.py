@@ -28,8 +28,14 @@ class Ui_MainWindow(object):
         self.recording_button.setGeometry(QtCore.QRect(300, 10, 93, 28))
         self.recording_button.setObjectName("recording_button")
         self.stop_button = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.stop_button.setGeometry(QtCore.QRect(400, 10, 93, 28))
+        self.stop_button.setGeometry(QtCore.QRect(500, 10, 93, 28))
         self.stop_button.setObjectName("stop_button")
+
+        self.stop_rec_button = QtWidgets.QPushButton(parent=self.centralwidget)
+        self.stop_rec_button.setGeometry(QtCore.QRect(400, 10, 93, 28))
+        self.stop_rec_button.setObjectName("stop_rec_button")
+
+
         self.l1 = QtWidgets.QLabel(parent=self.centralwidget)
         self.l1.setGeometry(QtCore.QRect(0, 50, 200, 150))
         self.l1.setObjectName("l1")
@@ -68,6 +74,7 @@ class Ui_MainWindow(object):
         self.capture_button.setText(_translate("MainWindow", "图像采集"))
         self.recording_button.setText(_translate("MainWindow", "开始录制"))
         self.stop_button.setText(_translate("MainWindow", "停止"))
+        self.stop_rec_button.setText(_translate("MainWindow", "停止录像"))
         self.l1.setText(_translate("MainWindow", "video1"))
         self.l4.setText(_translate("MainWindow", "video4"))
         self.l6.setText(_translate("MainWindow", "video6"))
