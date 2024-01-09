@@ -42,9 +42,11 @@ class MainApp(QMainWindow, Ui_MainWindow):
         if not hasattr(self, 'camera_settings_window'):
             self.camera_settings_window = Ui_Window()
             self.camera_settings_window.setupUi(self.camera_settings_window)
-
+            self.camera_settings_window.pushButton.clicked.connect(self.setting)
         self.camera_settings_window.show()
     #停止计时器，即停止视频显示
+    def setting(self):
+        print("子菜单")
     def stop(self):
         self.timer.stop()
     def stop_rec(self):
