@@ -28,7 +28,7 @@ class MainApp(QMainWindow, Ui_MainWindow):
         self.frame5=None
         self.frame6=None
         # 连接按钮等控件的信号与槽
-
+        #1234
         self.connect_button.clicked.connect(self.start_camera)
         self.capture_button.clicked.connect(self.capture)
         self.camera_setting_button.clicked.connect(self.camera_setting)
